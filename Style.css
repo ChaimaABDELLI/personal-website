@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7efd8; /* Vert d'eau background color */
+}
+
+h1, h2 {
+    color: #0000ff; /* Blue color for subtitles */
+}
+
+.purple {
+    font-style: italic;
+    font-weight: bold;
+    color: #800080; /* Purple color for name */
+}
+
+.blue {
+    color: #0000ff; /* Blue color for subtitles */
+}
+
+.italic {
+    font-style: italic;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: bold;
+    padding: 20px 0;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 75px); /* Adjust to center heart border */
+}
+
+.heart-border {
+    border: 5px solid #b760b7; /* Pink border around the image */
+    border-radius: 50%;
+}
+
+.about, .social-media {
+    margin: 20px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.butterfly {
+    width: 100px;
+    height: 100px;
+    background-image: url('butterfly.gif'); /* Replace with your butterfly image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation: butterflyAnimation 10s infinite alternate;
+}
+.butterfly1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('butterfly1.gif'); /* Replace with your butterfly image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    animation: butterflyAnimation 5s infinite alternate;
+}
+.butterfly2 {
+    width: 100px;
+    height: 100px;
+    background-image: url('butterfly2.gif'); /* Replace with your butterfly image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    animation: butterflyAnimation 5s infinite alternate;
+}
+
+@keyframes butterflyAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+audio {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    display: block;
+    margin: 0 auto;
+}
